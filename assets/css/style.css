@@ -1,0 +1,285 @@
+/* Common Css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    background-color: #fff;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol,a{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+:root{
+    --primaryColor: #ff9c00;
+    --secondaryColor: #353535;
+    --bgColor: #dcdad585;
+    --foorer:#004a8d;
+}
+.secTitle{
+    text-align: center;
+    margin: 70px 0;
+}
+.sec_title{
+    font-family: "Lato", Sans-serif;
+    font-size: 16px;
+    width: 600;
+    line-height: 22px;
+    color: var(--secondaryColor);
+}
+.sec_title h2{
+    color: var(--primaryColor);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -20px;
+}
+.subTitle h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+h3.subTitle {
+    margin: 22px 0;
+}
+.applyBtn{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 15px 30px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 50px;
+    margin: 15px 0;
+        background-color: var(--primaryColor);
+}
+.applyBtn:hover{
+    background-color: #ffca36;
+    transition: all linear .3s;
+    color: black;
+}
+.BackToTopBtn{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--primaryColor);
+    color: #fefefe;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    display: none;
+}
+/* Common Css end */
+/* nav Css start */
+nav .my_nav{
+    background: #ffca36;
+}
+nav #my_customNav ul li a {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    padding: 10px 10px;
+}
+.Menu_bar.menu_Animate{
+    position: fixed;
+    background-color: var(--primaryColor);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    animation: smooth .3s;
+}
+@keyframes smooth{
+    0%{
+        top: -50px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+/* nav Css end */
+
+/* banner css start */
+#Master_Banner{
+    position: relative;
+}
+.arrows .left_arrow,
+.arrows .right_arrow{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 157, 0, 0.963);
+    color: #fff;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.arrows .left_arrow{
+    left: 90%;
+}
+.arrows .right_arrow{
+    right: 90%;
+}
+#Banner{
+    position: relative;
+
+}
+#Banner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+#Banner .banner_item{
+    color: #fff;
+    z-index: 999;
+    margin-top: 100px;
+}
+#Banner .banner_item h2{
+    font-size: 60px;
+}
+#Banner .banner_item p{
+    font-size: 18px;
+    line-height: 50px;
+
+}
+#Banner .banner_item .banner_btn a{
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 40px 15px;
+}
+#Banner .banner_item .banner_btn a:first-child{
+    background-color: var(--primaryColor);
+    border: none;
+}
+
+/* banner css end */
+/* Admition css Start */
+#Admition{
+    margin-top: 20px;
+}
+#Admition .Admition_img img{
+    width: 500px;
+    height: 500px;
+
+}
+#Admition .Admition_Detl p{
+    font-size: 18px;
+}
+
+/* Admition css end */
+/* OurCourses css Start */
+#OurCourses {
+    background-color: var(--bgColor);
+    padding: 30px 0;
+    text-align: left !important;
+}
+.Course_Dtl{
+    background-color: #fff;
+    padding: 0 10px 15px 10px;
+}
+.Course_Dtl h3.subTitle{
+    margin: 0;
+}
+#OurCourses .Course_card h3{
+    padding: 15px 0;
+}
+#OurCourses .Course_card h2{
+    padding: 15px 10px;
+    border-radius: 50px 0 0 50px;
+    color: #fff;
+    display: block;
+    width: 200px;
+    margin:10px 0 10px 50%;
+    background-color: var(--primaryColor);
+}
+#OurCourses .Course_card p{
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: left;
+}
+/* OurCourses css end */
+/* Galleary css start */
+#Galleary{
+    padding-top: 30px;
+}
+#Galleary img{
+    max-width: 100%;
+    display: block;
+    padding: none;
+}
+/* Galleary css end */
+/* Notice css start */
+#Notice{
+    padding: 30px 0;
+}
+#Notice:hover{
+    background-color: #efefef;
+    transition: all linear .3s;
+}
+.noticeDtl{
+    padding: 20px 20px;
+    background-color: #efefef;
+    color: #000;
+}
+.noticeDtl:hover{
+    background-color: #fff;
+    transition: all linear .1s;
+    border-radius: 30px;
+}
+.noticeDtl h3{
+    font-size: 20px;
+}
+.noticeDtl h6{
+    padding: 10px 0;
+}
+.noticeDtl p{
+    font-size: 16px;
+}
+.noticeDtl a{
+    padding: 10px 0;
+    color: #000;
+}
+.noticeDtl a:hover{
+    color: #3886fd;
+    transition: all linear .3s;
+}
+/* Notice css end */
+/* footer css start */
+footer{
+    padding: 30px;
+    background-color:#996412;
+    color: #fff;
+}
+footer h4{
+    margin: 15px 0;
+}
+footer .footerAddress ul li a{
+    color: #fff;
+}
+footer .footerAddress ul li span{
+    padding-right: 10px;
+}
+/* footer css end */
